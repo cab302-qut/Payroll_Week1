@@ -8,7 +8,7 @@ public abstract class Employee implements Payable {
     private Address address;
     private double payRate;
     private static int nextID = 1000;
-    public static double STARTING_PAY_RATE = 7.75;
+    public static final double STARTING_PAY_RATE = 7.75;
 
     public Employee(String name) {
         this.name = name;
@@ -28,7 +28,7 @@ public abstract class Employee implements Payable {
     }
 
     public int getEmployeeID() {
-        return this.emplId;
+        return this.EMPLOYEE_ID;
     }
 
     public double getPayRate() {
